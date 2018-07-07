@@ -6,7 +6,7 @@ import {ApolloProvider} from 'react-apollo'
 import './style'
 import App from './components/App'
 
-const WWWID_API = 'https://wwwid-graphql--wayanjimmy.repl.co'
+const WWWID_API = 'https://wwwid-graphql.glitch.me'
 
 const client = new ApolloClient({
   link: new HttpLink({uri: WWWID_API}),
