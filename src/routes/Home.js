@@ -1,6 +1,7 @@
 import {Link} from 'preact-router/match'
 import {graphql} from 'react-apollo'
 import gql from 'graphql-tag'
+import Image from 'pimg'
 
 import {
   Card,
@@ -26,7 +27,12 @@ const Home = ({data: {loading, error, feed, _allCategories}}) => {
             </span>
           </CardHeader>
           <CardBody>
-            <img src={post.thumbnail} alt={post.title} width={200} />
+            <Image
+              src={post.thumbnail}
+              alt={post.title}
+              fetchOnDemand
+              width={200}
+            />
             <p dangerouslySetInnerHTML={{__html: post.description}} />
           </CardBody>
           <CardFooter>{post.author}</CardFooter>
