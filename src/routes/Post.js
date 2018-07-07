@@ -7,14 +7,13 @@ import {
   Footer as CardFooter,
   Body as CardBody
 } from '../components/Card'
-import Container from '../components/Container'
 
 const Post = ({data: {loading, error, post}}) => {
   if (error) return <h1>Error fetching post!</h1>
   if (loading) return <h2>Loading posts...</h2>
 
   return (
-    <Container>
+    <div>
       <Card key={post.id}>
         <CardHeader title={<h3>{post.title}</h3>}>
           <span>
@@ -26,7 +25,7 @@ const Post = ({data: {loading, error, post}}) => {
         </CardBody>
         <CardFooter>{post.author}</CardFooter>
       </Card>
-    </Container>
+    </div>
   )
 }
 

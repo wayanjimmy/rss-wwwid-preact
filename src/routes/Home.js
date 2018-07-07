@@ -9,14 +9,13 @@ import {
   Footer as CardFooter,
   Body as CardBody
 } from '../components/Card'
-import Container from '../components/Container'
 
 const Home = ({data: {loading, error, feed, _allCategories}}) => {
   if (error) return <h1>Error fetching feed!</h1>
   if (loading) return <h2>Loading posts...</h2>
 
   return (
-    <Container>
+    <div>
       {feed.map(post => (
         <Card key={post.id}>
           <CardHeader
@@ -38,7 +37,7 @@ const Home = ({data: {loading, error, feed, _allCategories}}) => {
           <CardFooter>{post.author}</CardFooter>
         </Card>
       ))}
-    </Container>
+    </div>
   )
 }
 
@@ -49,6 +48,7 @@ export const feed = gql`
       title
       thumbnail
       description
+      pubDate
     }
     allCategories {
       name

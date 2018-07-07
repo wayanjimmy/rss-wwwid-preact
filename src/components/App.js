@@ -5,14 +5,10 @@ import {Link} from 'preact-router/match'
 import Home from 'async!../routes/Home'
 import Post from 'async!../routes/Post'
 
-function Container({children}) {
-  return <div className="container">{children}</div>
-}
-
 function Header() {
   return (
     <header className="section" style={{background: '#101719'}}>
-      <Container>
+      <div>
         <div
           className="header-top"
           style={{
@@ -27,7 +23,7 @@ function Header() {
             RSS WWWID
           </Link>
         </div>
-      </Container>
+      </div>
     </header>
   )
 }
