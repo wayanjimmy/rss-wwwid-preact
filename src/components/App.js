@@ -1,13 +1,18 @@
 import {h, Component} from 'preact'
 import {Router} from 'preact-router'
 import {Link} from 'preact-router/match'
+import styled from 'preact-emotion'
 
 import Home from 'async!../routes/Home'
 import Post from 'async!../routes/Post'
 
+const HeaderClass = styled('header')`
+  background: #101719;
+`
+
 function Header() {
   return (
-    <header className="section" style={{background: '#101719'}}>
+    <HeaderClass>
       <div>
         <div
           className="header-top"
@@ -24,7 +29,7 @@ function Header() {
           </Link>
         </div>
       </div>
-    </header>
+    </HeaderClass>
   )
 }
 
