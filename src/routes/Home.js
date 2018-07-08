@@ -63,7 +63,7 @@ class Home extends Component {
   componentDidMount() {
     const {category = ''} = this.props.matches
     if (category.length > 0) {
-      this.setState({ selectedCategory: category })
+      this.setState({selectedCategory: category})
     }
   }
 

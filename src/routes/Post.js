@@ -23,7 +23,7 @@ const GET_POST = gql`
 const Post = ({id}) => (
   <div>
     <Query query={GET_POST} variables={{id}}>
-      {({loading, error,data}) => {
+      {({loading, error, data}) => {
         if (error) return <h1>Error fetching post!</h1>
         if (loading) return <h2>Loading posts...</h2>
 
