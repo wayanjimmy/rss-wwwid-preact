@@ -1,8 +1,24 @@
-# GraphCMS starter blog with Preact & Apollo Client [![Slack Status](https://slack.graphcms.com/badge.svg)](https://slack.graphcms.com)
+# RSS WWWID
+Ini adalah repositori hasil partisipasi tantangan ini [Tantangan Web Developer Untuk Membuat Aplikasi Web Bisa Digunakan Kurang Dari 5 Detik](https://medium.com/wwwid/tantangan-web-developer-untuk-membuat-aplikasi-web-bisa-digunakan-kurang-dari-5-detik-70bb7431741d).
 
-For an overview of how things work in `preact-cli` please refer to the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md)
+## Demo
+* [Netlify](https://jimboy-rss-wwwid-preact.netlify.com/)
 
-## How to start
-```
-git clone https://github.com/GraphCMS/graphcms-examples.git && cd graphcms-examples/preact-cli-apollo-blog && yarn && yarn dev
-```
+## Stack yang digunakan
+1. Preact
+1. Emotion JS
+1. GraphQL (https://wwwid-graphql.glitch.me/)
+
+## Tools yang digunakan
+1. [Cloudinary](https://cloudinary.com/documentation/fetch_remote_images) untuk fetch remote image
+1. [Lazy load images library](https://github.com/ooade/pimg)
+1. [WebPageTest simple testing](https://www.webpagetest.org/easy.php)
+
+## Hal - hal yang saya pelajari
+1. Service Worker
+1. Web performance
+1. Preact
+1. GraphQL
+
+## Yang belum dicoba
+1. Server Side Render
