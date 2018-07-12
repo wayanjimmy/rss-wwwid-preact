@@ -3,8 +3,8 @@ import {Router} from 'preact-router'
 import {Link} from 'preact-router/match'
 import styled from 'preact-emotion'
 
-import Home from 'async!../routes/Home'
-import Post from 'async!../routes/Post'
+import Home from 'async!./Home'
+import Post from 'async!./Post'
 
 const HeaderClass = styled('header')`
   background: #101719;
